@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const API_BASE = process.env.NEXT_APP_BASE || "http://localhost:3000/api/products"; // Change in production if needed
+const API_BASE = process.env.NEXT_APP_BASE ; // Change in production if needed
 
 // Create Product (POST)
 export const createProduct = async (formData) => {
