@@ -58,3 +58,13 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 git clone https://github.com/saivenkat346/product_management_dashboard.git
 cd product-dashboard
 npm install
+
+
+### 2.running the project in Dev environment
+```bash
+npm run dev 
+
+### 3.building the project in local host and running it
+```bash
+npm run build 
+npm start
