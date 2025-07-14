@@ -46,7 +46,7 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 - Product Form UI  
 - Product List with Filters  
 - Edit Product with Preview  
-- Animated Transitions  
+- Animated Transitions
 
 ---
 
@@ -66,3 +66,10 @@ npm run dev
 # 4. Build and run in production
 npm run build
 npm start
+
+# 5. Setup Environment Variables
+# Create a `.env` file in the root directory and add the following:
+MONGODB_URI=your_mongodb_connection_string
+💡 Replace your_mongodb_connection_string with your actual MongoDB URI (local or Atlas).
+⚠️ Make sure not to commit your .env file or expose your connection string publicly.
+
