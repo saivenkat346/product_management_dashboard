@@ -7,7 +7,7 @@ import { resetProduct } from "@/redux/productSlice";
 import { GetServerSideProps } from "next/types";
 import React, { useEffect } from "react";
 
-export default function index({ products }: { products: any[] }) {
+export default function ProductListing({ products }: { products: any[] }) {
 
 const dispatch = useAppDispatch()
 
@@ -15,7 +15,7 @@ useEffect(()=>{
  dispatch(resetProduct())
 
 
-},[])
+},[dispatch])
   return (
     <section className="min-h-screen flex flex-col bg-gray-100">
       <Header />

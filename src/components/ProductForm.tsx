@@ -43,7 +43,7 @@ export default function ProductForm() {
     setValue,
     formState: { errors },
   } = useForm<ProductFormData>({
-    // @ts-ignore
+    // @ts-expect-error proper types for number need to be defined 
     resolver: zodResolver(productSchema),
   });
 
@@ -52,7 +52,6 @@ export default function ProductForm() {
   const formType = useAppSelector((state) => state.product.formType);
   const stateTitle = useAppSelector((state) => state.product.title);
   const stateDescription = useAppSelector((state) => state.product.description);
-  const stateImage = useAppSelector((state) => state.product.image);
   const statePrice = useAppSelector((state) => state.product.price);
   const stateStatus = useAppSelector((state) => state.product.status);
   const stateDate = useAppSelector((state) => state.product.addedDate);
@@ -140,6 +139,7 @@ export default function ProductForm() {
       }
     } catch (err) {
       toast.error("Failed to submit product. Please try again.");
+      console.error(err)
     } finally {
       setLoading(false);
     }
@@ -147,7 +147,7 @@ export default function ProductForm() {
 
   return (
     <div className="w-full m-8 p-4 bg-white rounded-2xl shadow-md">
-      {/* @ts-ignore */}
+      {/* @ts-expect-error due to the number type for price on submit function gives type error */}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-black">
         <h2 className="text-xl font-semibold text-center">Add Product</h2>
 

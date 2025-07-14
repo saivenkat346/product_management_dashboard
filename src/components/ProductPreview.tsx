@@ -1,6 +1,6 @@
 import { useAppSelector } from "@/redux/hooks";
 import React from "react";
-
+import Image from "next/image";
 export default function ProductPreview() {
   const title = useAppSelector((state) => state.product.title);
   const description = useAppSelector((state) => state.product.description);
@@ -21,7 +21,9 @@ export default function ProductPreview() {
         <div className="flex flex-col md:flex-row gap-4 items-center">
           {/* Image Section */}
           {image ? (
-            <img
+            <Image
+              height={128}
+              width={128}
               src={image}
               alt={title}
               className="w-32 h-32 object-cover rounded-xl border border-gray-200"
@@ -34,7 +36,9 @@ export default function ProductPreview() {
 
           {/* Text Content */}
           <div className="flex-1">
-            <h2 className="text-xl font-semibold mb-1">{title || "No Title"}</h2>
+            <h2 className="text-xl font-semibold mb-1">
+              {title || "No Title"}
+            </h2>
             <p className="text-sm text-gray-600 mb-2">
               {description || "No Description"}
             </p>

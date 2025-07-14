@@ -30,7 +30,7 @@ export default function EditProductPage({ product }: { product: any }) {
       dispatch(setAddedDate(product.date?.split("T")[0] || "")); // YYYY-MM-DD
       dispatch(setImage(product.imageUrl || null));
     }
-  }, [JSON.stringify(product)]);
+  }, [product,dispatch]);
 
   return (
     <section className="min-h-screen flex flex-col bg-gray-100">

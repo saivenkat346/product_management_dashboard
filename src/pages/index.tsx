@@ -1,7 +1,4 @@
-"use client";
-
 import { Geist, Geist_Mono } from "next/font/google";
-import ProductForm from "@/components/ProductForm";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
