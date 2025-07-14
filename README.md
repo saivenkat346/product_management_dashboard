@@ -8,28 +8,28 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 
 ## 🔧 Features
 
-- ✅ Create / Edit / Delete Products
-- ✅ Image upload support (with preview)
-- ✅ Date selection for "added date"
-- ✅ Status filter (active/inactive)
-- ✅ Range-based date filtering
-- ✅ Pagination with infinite scroll
-- ✅ Server-side rendering with `getServerSideProps`
-- ✅ Fully responsive & animated UI with **Framer Motion**
-- ✅ Redux Toolkit integration for form state
-- ✅ Modern TailwindCSS 3.0-based UI
+- ✅ Create / Edit / Delete Products  
+- ✅ Image upload support (with preview)  
+- ✅ Date selection for "added date"  
+- ✅ Status filter (active/inactive)  
+- ✅ Range-based date filtering  
+- ✅ Pagination with infinite scroll  
+- ✅ Server-side rendering with `getServerSideProps`  
+- ✅ Fully responsive & animated UI with **Framer Motion**  
+- ✅ Redux Toolkit integration for form state  
+- ✅ Modern TailwindCSS 3.0-based UI  
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Framework**: [Next.js](https://nextjs.org/)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
-- **Validation**: [Zod](https://zod.dev/) + [React Hook Form](https://react-hook-form.com/)
-- **Animations**: [Framer Motion](https://www.framer.com/motion/)
-- **Database**: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-- **File Uploads**: Local (Note: Vercel’s file system is read-only in production)
+- **Framework**: [Next.js](https://nextjs.org/)  
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)  
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)  
+- **Validation**: [Zod](https://zod.dev/) + [React Hook Form](https://react-hook-form.com/)  
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)  
+- **Database**: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)  
+- **File Uploads**: Local (Note: Vercel’s file system is read-only in production)  
 - **Deployment**: [Vercel](https://vercel.com/)
 
 ---
@@ -42,29 +42,27 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 
 ## 📸 Screenshots
 
-<!-- Add actual screenshots here -->
+<!-- Replace with actual images when ready -->
 - Product Form UI  
 - Product List with Filters  
 - Edit Product with Preview  
-- Animated Transitions
+- Animated Transitions  
 
 ---
 
 ## 🧪 Getting Started
 
-### 1. Clone and Install Dependencies
-
 ```bash
+# 1. Clone the repository
 git clone https://github.com/saivenkat346/product_management_dashboard.git
-cd product-dashboard
+cd product_management_dashboard
+
+# 2. Install dependencies
 npm install
 
+# 3. Run in development
+npm run dev
 
-### 2.running the project in Dev environment
-```bash
-npm run dev 
-
-### 3.building the project in local host and running it
-```bash
-npm run build 
+# 4. Build and run in production
+npm run build
 npm start
