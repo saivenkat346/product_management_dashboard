@@ -16,8 +16,7 @@ const geistMono = Geist_Mono({
 
 export default function Home() {
 
-  console.log(process.env.NEXT_API_BASE,"next api base");
-  
+
   return (
     <div
       className={`min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-blue-100 ${geistSans.variable} ${geistMono.variable}`}

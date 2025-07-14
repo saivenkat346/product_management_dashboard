@@ -36,7 +36,7 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 
 ## 🚀 Live Demo
 
-🌐 [https://your-vercel-project.vercel.app](https://your-vercel-project.vercel.app)
+🌐 [https://product-management-dashboard-flame.vercel.app](https://product-management-dashboard-flame.vercel.app/)
 
 ---
 
@@ -55,6 +55,6 @@ A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB*
 ### 1. Clone and Install Dependencies
 
 ```bash
-git clone https://github.com/your-username/product-dashboard.git
+git clone https://github.com/saivenkat346/product_management_dashboard.git
 cd product-dashboard
 npm install
