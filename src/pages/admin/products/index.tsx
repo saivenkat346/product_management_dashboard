@@ -48,7 +48,7 @@ export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   params.skip = "0";
 
   const products = await getProducts(params);
-   console.log(products)
+
   return {
     props: {
       products,

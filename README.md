@@ -1,40 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# 🧾 Product Management Dashboard
 
-## Getting Started
+A full-stack **Product Management Dashboard** built with **Next.js**, **MongoDB**, and **TailwindCSS**, allowing users to create, edit, delete, and filter products with a clean, responsive UI.
 
-First, run the development server:
+> 💼 Built as part of a full-stack developer assessment.
+
+---
+
+## 🔧 Features
+
+- ✅ Create / Edit / Delete Products
+- ✅ Image upload support (with preview)
+- ✅ Date selection for "added date"
+- ✅ Status filter (active/inactive)
+- ✅ Range-based date filtering
+- ✅ Pagination with infinite scroll
+- ✅ Server-side rendering with `getServerSideProps`
+- ✅ Fully responsive & animated UI with **Framer Motion**
+- ✅ Redux Toolkit integration for form state
+- ✅ Modern TailwindCSS 3.0-based UI
+
+---
+
+## ⚙️ Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Validation**: [Zod](https://zod.dev/) + [React Hook Form](https://react-hook-form.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Database**: [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
+- **File Uploads**: Local (Note: Vercel’s file system is read-only in production)
+- **Deployment**: [Vercel](https://vercel.com/)
+
+---
+
+## 🚀 Live Demo
+
+🌐 [https://your-vercel-project.vercel.app](https://your-vercel-project.vercel.app)
+
+---
+
+## 📸 Screenshots
+
+<!-- Add actual screenshots here -->
+- Product Form UI  
+- Product List with Filters  
+- Edit Product with Preview  
+- Animated Transitions
+
+---
+
+## 🧪 Getting Started
+
+### 1. Clone and Install Dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+git clone https://github.com/your-username/product-dashboard.git
+cd product-dashboard
+npm install

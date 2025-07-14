@@ -43,6 +43,7 @@ export default function ProductForm() {
     setValue,
     formState: { errors },
   } = useForm<ProductFormData>({
+    // @ts-ignore
     resolver: zodResolver(productSchema),
   });
 
@@ -146,6 +147,7 @@ export default function ProductForm() {
 
   return (
     <div className="w-full m-8 p-4 bg-white rounded-2xl shadow-md">
+      {/* @ts-ignore */}
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 text-black">
         <h2 className="text-xl font-semibold text-center">Add Product</h2>
 
