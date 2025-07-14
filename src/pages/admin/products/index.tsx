@@ -4,20 +4,28 @@ import ProductList from "@/components/ProductList";
 import { getProducts } from "@/lib/apicalls";
 import { useAppDispatch } from "@/redux/hooks";
 import { resetProduct } from "@/redux/productSlice";
+import Head from "next/head";
 import { GetServerSideProps } from "next/types";
 import React, { useEffect } from "react";
 
 export default function ProductListing({ products }: { products: any[] }) {
+  const dispatch = useAppDispatch();
 
-const dispatch = useAppDispatch()
-
-useEffect(()=>{
- dispatch(resetProduct())
-
-
-},[dispatch])
+  useEffect(() => {
+    dispatch(resetProduct());
+  }, [dispatch]);
   return (
     <section className="min-h-screen flex flex-col bg-gray-100">
+      <Head>
+        <title>Product List | Product Management Dashboard</title>
+        <meta
+          name="description"
+          content="Browse, filter, and manage all products from a single page using the Product Management Dashboard."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#2563eb" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <section className=" p-8 ">
         <ProductList initialProducts={products} />
@@ -26,8 +34,6 @@ useEffect(()=>{
     </section>
   );
 }
-
-
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const params: Record<string, string> = {};

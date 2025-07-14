@@ -15,6 +15,7 @@ import {
   setFormType,
   setProductId,
 } from "@/redux/productSlice";
+import Head from "next/head";
 
 export default function EditProductPage({ product }: { product: any }) {
   const dispatch = useAppDispatch();
@@ -30,10 +31,20 @@ export default function EditProductPage({ product }: { product: any }) {
       dispatch(setAddedDate(product.date?.split("T")[0] || "")); // YYYY-MM-DD
       dispatch(setImage(product.imageUrl || null));
     }
-  }, [product,dispatch]);
+  }, [product, dispatch]);
 
   return (
     <section className="min-h-screen flex flex-col bg-gray-100">
+      <Head>
+        <title>Edit Product | Product Management Dashboard</title>
+        <meta
+          name="description"
+          content="Modify product details with a clean and intuitive interface on the Product Management Dashboard."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#2563eb" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <section className="p-8">
         <ProductEditor key={product._id || "new"} />
@@ -45,7 +56,7 @@ export default function EditProductPage({ product }: { product: any }) {
 
 export const getServerSideProps: GetServerSideProps = async ({ query }) => {
   const product = await getProductById(query.id);
-   
+
   return {
     props: {
       product: product ? product : {},

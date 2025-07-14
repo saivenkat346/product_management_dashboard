@@ -3,7 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import Head from "next/head";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,6 +21,13 @@ export default function Home() {
     <div
       className={`min-h-screen flex flex-col bg-gradient-to-br from-blue-50 to-blue-100 ${geistSans.variable} ${geistMono.variable}`}
     >
+      <Head>
+  <title>Product Management Dashboard | Manage Your Products Efficiently</title>
+        <meta name="description" content="A simple yet powerful dashboard to create, update, and manage products with ease." />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#2563eb" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Header />
       <main className="flex-1 px-4 py-8 max-w-4xl mx-auto text-center">
         {/* Hero Section */}
