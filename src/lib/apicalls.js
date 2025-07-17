@@ -1,8 +1,8 @@
 import axios from "axios";
 
 
-// const API_BASE = process.env.NEXT_APP_BASE || "http://localhost:3000/api/products"; // uncomment for local development
- const API_BASE = "https://product-management-dashboard-flame.vercel.app/api/products" ; // uncomment if your pushing the code
+const API_BASE = "http://localhost:3000/api/products"; // uncomment for local development
+//  const API_BASE = "https://product-management-dashboard-flame.vercel.app/api/products" ; // uncomment if your pushing the code
 
 // Create Product (POST)
 export const createProduct = async (formData) => {

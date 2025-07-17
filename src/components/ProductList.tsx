@@ -177,7 +177,7 @@ return (
                     </span>
                     <span>
                       <span className="font-medium text-gray-800">Added:</span>{" "}
-                      {product.date}
+                      {product.date?.split("T")[0] || ""}
                     </span>
                   </div>
                 </div>
